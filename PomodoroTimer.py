@@ -32,15 +32,15 @@ class PomodoroTimer:
         self.master.style.configure("TProgressbar", thickness=30, troughcolor="#F0F0F0", background="#2E4057")
 
         # Stylish start button
-        self.start_button = tk.Button(master, text="Start Pomodoro", command=self.start_pomodoro, bg="#4CAF50", fg="white", font=('Arial', 14, 'bold'), relief=tk.FLAT)
+        self.start_button = tk.Button(master, text="Start Pomodoro", command=self.start_pomodoro, bg="green", fg="white", font=('Arial', 14, 'bold'), relief=tk.FLAT)
         self.start_button.pack(pady=10)
 
         # Stylish break button
-        self.break_button = tk.Button(master, text="Start Break", command=self.start_break, state=tk.DISABLED, bg="#3498db", fg="white", font=('Arial', 14, 'bold'), relief=tk.FLAT)
+        self.break_button = tk.Button(master, text="Start Break", command=self.start_break, state=tk.DISABLED, bg="blue", fg="white", font=('Arial', 14, 'bold'), relief=tk.FLAT)
         self.break_button.pack(pady=10)
 
         # Stop button to stop the current timer
-        self.stop_button = tk.Button(master, text="Stop", command=self.stop_timer, state=tk.DISABLED, bg="#e74c3c", fg="white", font=('Arial', 14, 'bold'), relief=tk.FLAT)
+        self.stop_button = tk.Button(master, text="Stop", command=self.stop_timer, state=tk.DISABLED, bg="red", fg="white", font=('Arial', 14, 'bold'), relief=tk.FLAT)
         self.stop_button.pack(pady=10)
 
         # # Button to log daily work with date and day
